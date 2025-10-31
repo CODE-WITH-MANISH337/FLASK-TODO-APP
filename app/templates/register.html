@@ -1,0 +1,22 @@
+{%extends 'base.html'%}
+{%block title%}REGISTER{%endblock%}
+
+{%block content%}
+<div class="container">
+    <h2>REGISTER YOUR SELF </h2>
+    <form class="form-group" action="{{ url_for('auth.register') }}" method="POST">
+        {{ form.hidden_tag() }}
+        <div class="form-group">
+            <label for="name">{{ form.name.label }}</label>
+            {{ form.name(class="form-control") }}
+        </div>
+        <div class="form-group">
+            <label for="password">{{ form.password.label }}</label>
+            {{ form.password(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.submit(class="btn btn-primary") }}
+        </div>
+    </form>
+</div>
+{%endblock%}
