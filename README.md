@@ -64,6 +64,8 @@ A simple web-based Todo application built with Flask, featuring user authenticat
 
 3. Access the app at `http://localhost:5000`.
 
+4. Acess the app at docker hub 'https://hub.docker.com/repository/docker/manish94565/insurance-premium-predictor/general'
+
 ## Usage
 
 1. **Register**: Create a new account at `/register`.
